@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+
+}
+
+
+
+body, html {
+    height: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Raleway', Roboto, Arial, sans-serif;
+    color: white;
+   
+    
+}
+
+
+main {
+    height: calc(100% - 20px);
+    padding: 20px;
+    width: 75%;
+    background-color: black;
+    margin: 10px auto;
+    display: grid;
+    gap: 15px;
+
+    grid-template-columns: 24% 26% 20% 26%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 'left-top left-top center-top right-top' 
+                         'left-top left-top center-top right-mid'
+                         'left-bottom center-mid1 center-top right-mid'
+                         'left-bottom center-mid1 center-top right-mid'
+                         'left-bottom center-mid2 right-bottom right-bottom'
+                         'left-bottom center-bottom right-bottom right-bottom' ;
+      border-radius: 20px;           
+}
+p {
+    font-size: 14px;
+}
+
+main > * {
+    border-radius: 30px;
+    padding: 15px;
+    background-color: rgb(23, 23, 23);
+   
+}
+
+
+.left-top {
+    grid-area: left-top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: rgb(39, 38, 38);
+    
+}
+
+.left-container {
+    width: 45%;
+   height: 95%;
+   border-radius: 25px;
+   overflow: hidden;
+   background-color: blueviolet;
+   margin: 5px;
+   
+   
+}
+.left-container img{
+    width: 110%;
+    height: 120%;
+    border-radius: 25px;
+}
+.right-container {
+   width: 52%;
+   height: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+     border-radius: 25px;
+     position: relative;
+     background-color: #171717;
+
+}
+
+
+.right-container img {
+    width: 140px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid yellowgreen;
+    padding: 20px;
+    opacity: .7;
+
+}
+
+#circle svg {
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+}
+
+
+ /* 2nd grid  */
+.center-top {
+grid-area: center-top;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+}
+.center-top i, p {
+    font-size: 1rem;
+}
+.cat-box {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+
+   
+}
+
+.cat-divider {
+    width: 100%;
+    height: 1.5px;
+    background-color: rgba(128, 128, 128, 0.445);
+    margin: 20px 0;
+}
+
+.cat-box.cat-box:hover {
+
+    border-radius: 25px;
+    background-color: rgba(66, 65, 65, 0.33);
+   
+   
+    i {
+        color: yellowgreen;
+    }
+    &::after {
+        content: "";
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: blueviolet;
+
+    }
+}
+
+
+
+
+
+.right-top {
+    grid-area: right-top;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 90%;
+}
+.v-line {
+    width: 2px;
+    height: 40px;
+    background-color: rgba(128, 128, 128, 0.537);
+
+}
+.right-top i {
+    font-size: 2rem;
+    opacity: .8;
+   
+   
+}
+.right-top p {
+    font-size: .6rem;
+    opacity: .8;
+    
+}
+     
+   /* Left Bottom */
+
+.left-bottom {
+    grid-area: left-bottom;
+    background-color: black;
+    border: 2px solid yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 20px;
+    
+}
+
+.left-bottom h1 {
+
+   font-family: "Bebas Neue", sans-serif;
+  font-size: 8vw;
+  font-weight: 400;
+  line-height: 1;
+  transform: scaleX(0.7);
+  display: inline-block;
+   transform-origin: left;
+   text-align: center;
+   
+   
+}
+.left-bottom h5 {
+    color: rgba(132, 81, 181, 0.941);
+    letter-spacing: .4vw;
+    overflow-wrap: break-word;
+  
+}
+
+.line {
+    width: 100%;
+    height: 1.5px;
+    background-color: gray;
+}
+.bitcoin-box-container {
+    display: flex;
+        gap: 15px;
+}
+
+.bitcoin-box {
+    width: 50px;
+    height: 40px;
+    background-color: rgb(182, 210, 71);
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle; 
+    line-height: 3.5;
+}
+.bitcoin-box img {
+    width: 80%;
+}
+
+
+.barcode img{
+    width: 100%;
+    height: 60%;
+}
+
+            /* Center Mid */
+
+.center-mid1 {
+    grid-area: center-mid1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.center-mid1 p {
+    color: gray;
+}
+.address p {
+    font-size: .7rem;
+    font-weight: 600;
+}
+
+.url-text {
+     font-size: .9rem;
+    font-weight: 600;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(182, 210, 71);
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+.circle i {
+    color: black;
+}
+.location {
+    display: flex;
+    gap: 5px;
+}
+
+
+
+ /* center mid 2  */
+
+.center-mid2 {
+    grid-area: center-mid2;
+    background-color: #171717;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+    
+}
+.center-mid2 img {
+    width: 20%;
+   
+}
+
+.center-bottom {
+    grid-area: center-bottom;
+   background-color: rgb(182, 210, 71);
+   color: black;
+   display: flex;
+   gap: 20px;
+   justify-content: space-between;
+   align-items: end;
+   padding: 25px;
+   position: relative;
+}
+
+.center-bottom h6 {
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+.center-bottom p {
+    font-size: .6rem;
+}
+.arrow {
+    position: absolute;
+    width: 10%;
+    top: 15%;
+    right: 4%;
+}
+
+.qr img{
+    width: 90%;
+}
+
+.right-mid {
+    grid-area: right-mid;
+    position: relative;
+   background-color: rgb(182, 210, 71);
+   overflow: hidden;
+
+   
+}
+.right-mid img {
+   position: absolute;
+   bottom: 0;
+   left: -10%;
+   width: 120%;
+}
+
+.right-bottom {
+    grid-area: right-bottom;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+  
+    
+
+}
+
+.text-area, .review-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    
+}
+.text-area h2 { 
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.review-area h3 {
+    font-size: 4rem;
+    text-align: center;
+    line-height: .85;
+}
+.stars {
+    color:  gold;
+   font-size: 2rem;
+   margin-bottom: 
+}
+button {
+    background-color: rgb(119, 47, 186);
+    color: white;
+    padding: 8px 5px;
+    border-radius: 10px;
+    
+}
