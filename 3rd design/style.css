@@ -1,8 +1,14 @@
+:root {
+  --primary-color: white;
+  --secondary-color: gray;
+  --primary-dark: black;
+  
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 1px dotted red;
+    
   
 }
 
@@ -16,10 +22,12 @@ width: 100vw;
 }
 
 main {
+padding: 10px;
 width: 55%;
 min-width: 900px;
 height: 75vh;
-background-color: #222222;
+min-height: 600px;
+background-color: #141414;
 border-radius: 30px;
 border: 15px solid black;
 position: relative;
@@ -33,12 +41,75 @@ grid-template-areas: 'top-left top-left top-mid1 top-mid2 top-right'
             'left-bottom left-bottom left-bottom right-bottom right-bottom'
             'left-bottom left-bottom left-bottom right-bottom right-bottom' ;
 
-gap: 10px;    
- 
-  
+gap: 15px;    
 
 }
 
+h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+h5 {
+  font-size: .75rem;
+  color: var(--primary-color);
+}
+h2 {
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+p {
+  font-size: .65rem;
+  color: var(--secondary-color);
+}
+
+.bento-card {
+ background-color: #141414;    
+  border: 1px solid #27272a;     
+  border-radius: 24px;
+  box-shadow: 0 0 1px 3px #0b0b0b;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-card {
+  color: var(--secondary-color);
+ background-color: #141414;    
+  border: 1px solid #27272a;
+  width: 35px;     
+  height: 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px 3px #0b0b0b;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.9;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.no-padding {
+  padding: 0;
+}
+  
+
+
+.tech-icons {
+ background-color: #141414;    
+  border: 1px solid #27272a;
+  width: 30px;     
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 3px #0b0b0b;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
 
 .h-line1 {
   position: absolute;
@@ -109,4 +180,15 @@ background-color: rgba(35, 34, 34, 0.467);
 }
 .right-bottom {
   grid-area: right-bottom;
+}
+
+.thumb {
+  transition: all ease 1s;
+}
+.thumb:active {
+  background-color: black;
+  transform: translate(-99%);
+}
+.thumb:active i {
+  color: white;
 }

@@ -5,32 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3rd Design</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"  rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <main>
+<body class="">
+    <main class="text-white" >
         <div class="h-line1"></div>
         <div class="h-line2"></div>
         <div class="v-line"></div>
-       <div class="top-left">
-        <div class="profile">
-            <div class="dp">
-                <img src="profile.png" alt="">
+
+       <div class="top-left bento-card flex flex-col justify-around">
+        <div class="profile flex gap-2">
+            <div class="dp size-9 rounded-full overflow-hidden">
+                <img class="size-full object-cover" src="profile.png" alt="">
             </div>
-            <h5 class="">Hi, I'm Jane</h5>
-            <p class="">designer</p>
-        </div>
+             <div class="text">
+                <h5 class="">Hi, I'm Jane</h5>   
+                 <p class="text-gray-500">designer</p>
+                </div>
+         </div>
+         <h1>Desiging with purpose, innovating with passion.</h1>
+            <p>I constantly explore new tools and techniques to design impactful and user-friendly digital solution</p>
        </div> 
-       <div class="top-mid1"></div>
-       <div class="top-mid2"></div>
-       <div class="top-right"></div>
-       <div class="left-mid1"></div>
-       <div class="left-mid2"></div>
-       <div class="center-mid"></div>
-       <div class="right-mid1"></div>
-       <div class="right-mid2"></div>
-       <div class="left-bottom"></div>
-       <div class="right-bottom"></div>
+       <div class="top-mid1 bento-card overflow-hidden no-padding">
+        <img class="w-full h-full" src="phone.jpg" alt="">
+       </div>
+       <div class="top-mid2 bento-card overflow-hidden no-padding">
+         <img class="w-full h-full" src="ipad.jpg" alt="">
+       </div>
+       <div class="top-right grid grid-cols-3 gap-3">
+        <div class="social-card" ><i class="ri-facebook-circle-fill"></i></div>
+        <div class="social-card" ><i class="ri-twitter-x-line"></i></div>
+        <div class="social-card"><i class="ri-instagram-fill"></i></div>
+        <div class="social-card"><i class="ri-linkedin-box-fill"></i></div>
+        <div class="social-card"><i class="ri-dribbble-line"></i></div>
+        <div class="social-card"><i class="ri-behance-fill"></i></div>
+       </div>
+       <div class="left-mid1 bento-card overflow-hidden no-padding">
+         <img class="w-full h-full" src="profile.png" alt="">
+       </div>
+       <div class="left-mid2 bento-card overflow-hidden flex flex-col justify-between">
+            <div class="">
+            <p>Tech Arsenal</p>
+            <h2>Stac I Use</h2>
+            </div>
+            <div class="tech-stack grid grid-cols-3 gap-3">
+                <div class="tech-icons"><i class="ri-figma-line"></i></div>
+                <div class="tech-icons"><i class="ri-slack-fill"></i></div>
+                <div class="tech-icons"><i class="ri-discord-fill"></i></div>
+                <div class="tech-icons"><i class="ri-discord-fill"></i></div>
+                <div class="tech-icons"><i class="ri-slack-fill"></i></div>
+                <div class="tech-icons"><i class="ri-figma-line"></i></div>
+            </div>
+
+       </div>
+       <div class="center-mid bento-card no-padding">
+         <img class="w-full h-full" src="laptop.jpg" alt="">
+       </div>
+       <div class="right-mid1 bento-card flex flex-col justify-between">
+        <div class="">
+        <p>Resources</p>
+        <h5 class="leading-4">Resources to Speed your workflow</h5>
+        </div>
+        <div class="flex justify-end">
+             <i class="flex justify-center items-center rounded-full border border-gray-500/70 size-6 ri-arrow-right-up-line"></i>
+        </div>
+       </div>
+
+       <div class="right-mid2 bento-card place-items-center">
+        <div class="w-13 h-7 border bg-gray-400/20 border-gray-500/40 rounded-3xl relative">
+            <div class="thumb size-6.5 bg-white rounded-full absolute right-0 cursor-pointer flex justify-center items-center">
+                <i class="text-black/95 text-xl ri-moon-fill"></i>
+            </div>
+
+        </div>
+       </div>
+
+       <div class="left-bottom bento-card flex">
+        <div class="flex flex-col justify-around w-3/5">
+        <h1>Currently, I am learning <br>Framer</h1>
+        <p>I am also sharpening my skills in web design and constantly practicing to refine my craft and create better user experiences.</p>
+         </div>
+         <div class="right">
+
+         </div>
+
+    </div>
+       <div class="right-bottom bento-card flex flex-col justify-between">
+        <div class="flex flex-col gap-1">
+        <p>Say hello</p>
+        <h1>Let's Work Together</h1>
+        <p>Let's create something unique together I'm excited to collaborate.</p>
+       </div>
+        <div class="flex justify-end">
+            <i class="flex justify-center items-center rounded-full border border-gray-500/70 size-6 ri-arrow-right-up-line"></i>
+        </div>
+       </div>
 
 
 
