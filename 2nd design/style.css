@@ -4,27 +4,24 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  
 
 }
-
-
-
-body, html {
+body,
+html {
     height: 100%;
     min-height: 100vh;
     overflow-x: hidden;
     font-family: 'Raleway', Roboto, Arial, sans-serif;
     color: white;
-   
-    
+
+
 }
 
 
 main {
-    height: calc(100% - 20px);
-    padding: 20px;
-    width: 75%;
+    height: 100%;
+    padding: 10px;
+    width: 80%;
     background-color: black;
     margin: 10px auto;
     display: grid;
@@ -32,23 +29,24 @@ main {
 
     grid-template-columns: 24% 26% 20% 26%;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 'left-top left-top center-top right-top' 
-                         'left-top left-top center-top right-mid'
-                         'left-bottom center-mid1 center-top right-mid'
-                         'left-bottom center-mid1 center-top right-mid'
-                         'left-bottom center-mid2 right-bottom right-bottom'
-                         'left-bottom center-bottom right-bottom right-bottom' ;
-      border-radius: 20px;           
+    grid-template-areas: 'left-top left-top center-top right-top'
+        'left-top left-top center-top right-mid'
+        'left-bottom center-mid1 center-top right-mid'
+        'left-bottom center-mid1 center-top right-mid'
+        'left-bottom center-mid2 right-bottom right-bottom'
+        'left-bottom center-bottom right-bottom right-bottom';
+    border-radius: 20px;
 }
+
 p {
     font-size: 14px;
 }
 
-main > * {
+main>* {
     border-radius: 30px;
     padding: 15px;
     background-color: rgb(23, 23, 23);
-   
+
 }
 
 
@@ -59,33 +57,35 @@ main > * {
     align-items: center;
     padding: 0;
     background-color: rgb(39, 38, 38);
-    
+
 }
 
 .left-container {
     width: 45%;
-   height: 95%;
-   border-radius: 25px;
-   overflow: hidden;
-   background-color: blueviolet;
-   margin: 5px;
-   
-   
+    height: 95%;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: blueviolet;
+    margin: 5px;
+
+
 }
-.left-container img{
+
+.left-container img {
     width: 110%;
     height: 120%;
     border-radius: 25px;
 }
+
 .right-container {
-   width: 52%;
-   height: 100%;
+    width: 52%;
+    height: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-     border-radius: 25px;
-     position: relative;
-     background-color: #171717;
+    border-radius: 25px;
+    position: relative;
+    background-color: #171717;
 
 }
 
@@ -110,27 +110,32 @@ main > * {
 }
 
 @keyframes rotate {
-    from { transform: rotate(360deg); }
+    from {
+        transform: rotate(360deg);
+    }
 }
 
 
- /* 2nd grid  */
+/* 2nd grid  */
 .center-top {
-grid-area: center-top;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
+    grid-area: center-top;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 }
-.center-top i, p {
+
+.center-top i,
+p {
     font-size: 1rem;
 }
+
 .cat-box {
     display: flex;
     gap: 15px;
     padding: 10px;
 
-   
+
 }
 
 .cat-divider {
@@ -144,17 +149,18 @@ justify-content: space-around;
 
     border-radius: 25px;
     background-color: rgba(66, 65, 65, 0.33);
-   
-   
+
+
     i {
         color: yellowgreen;
     }
+
     &::after {
         content: "";
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background: blueviolet;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: blueviolet;
 
     }
 }
@@ -172,25 +178,28 @@ justify-content: space-around;
     gap: 10px;
     height: 90%;
 }
+
 .v-line {
     width: 2px;
     height: 40px;
     background-color: rgba(128, 128, 128, 0.537);
 
 }
+
 .right-top i {
     font-size: 2rem;
     opacity: .8;
-   
-   
+
+
 }
+
 .right-top p {
     font-size: .6rem;
     opacity: .8;
-    
+
 }
-     
-   /* Left Bottom */
+
+/* Left Bottom */
 
 .left-bottom {
     grid-area: left-bottom;
@@ -200,27 +209,28 @@ justify-content: space-around;
     flex-direction: column;
     justify-content: space-between;
     padding: 5px 20px;
-    
+
 }
 
 .left-bottom h1 {
 
-   font-family: "Bebas Neue", sans-serif;
-  font-size: 8vw;
-  font-weight: 400;
-  line-height: 1;
-  transform: scaleX(0.7);
-  display: inline-block;
-   transform-origin: left;
-   text-align: center;
-   
-   
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 8vw;
+    font-weight: 400;
+    line-height: 1;
+    transform: scaleX(0.7);
+    display: inline-block;
+    transform-origin: left;
+    text-align: center;
+
+
 }
+
 .left-bottom h5 {
     color: rgba(132, 81, 181, 0.941);
     letter-spacing: .4vw;
     overflow-wrap: break-word;
-  
+
 }
 
 .line {
@@ -228,9 +238,10 @@ justify-content: space-around;
     height: 1.5px;
     background-color: gray;
 }
+
 .bitcoin-box-container {
     display: flex;
-        gap: 15px;
+    gap: 15px;
 }
 
 .bitcoin-box {
@@ -239,40 +250,44 @@ justify-content: space-around;
     background-color: rgb(182, 210, 71);
     border-radius: 10px;
     text-align: center;
-    vertical-align: middle; 
+    vertical-align: middle;
     line-height: 3.5;
 }
+
 .bitcoin-box img {
     width: 80%;
 }
 
 
-.barcode img{
+.barcode img {
     width: 100%;
     height: 60%;
 }
 
-            /* Center Mid */
+/* Center Mid */
 
 .center-mid1 {
     grid-area: center-mid1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
+
 .center-mid1 p {
     color: gray;
 }
+
 .address p {
     font-size: .7rem;
     font-weight: 600;
 }
 
 .url-text {
-     font-size: .9rem;
+    font-size: .9rem;
     font-weight: 600;
 }
+
 .circle {
     width: 30px;
     height: 30px;
@@ -282,9 +297,11 @@ justify-content: space-around;
     vertical-align: middle;
     line-height: 1.5;
 }
+
 .circle i {
     color: black;
 }
+
 .location {
     display: flex;
     gap: 5px;
@@ -292,7 +309,7 @@ justify-content: space-around;
 
 
 
- /* center mid 2  */
+/* center mid 2  */
 
 .center-mid2 {
     grid-area: center-mid2;
@@ -300,33 +317,36 @@ justify-content: space-around;
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
-    
+
+
 }
+
 .center-mid2 img {
     width: 20%;
-   
+
 }
 
 .center-bottom {
     grid-area: center-bottom;
-   background-color: rgb(182, 210, 71);
-   color: black;
-   display: flex;
-   gap: 20px;
-   justify-content: space-between;
-   align-items: end;
-   padding: 25px;
-   position: relative;
+    background-color: rgb(182, 210, 71);
+    color: black;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: end;
+    padding: 25px;
+    position: relative;
 }
 
 .center-bottom h6 {
     font-size: .9rem;
     margin-bottom: 5px;
 }
+
 .center-bottom p {
     font-size: .6rem;
 }
+
 .arrow {
     position: absolute;
     width: 10%;
@@ -334,23 +354,24 @@ justify-content: space-around;
     right: 4%;
 }
 
-.qr img{
+.qr img {
     width: 90%;
 }
 
 .right-mid {
     grid-area: right-mid;
     position: relative;
-   background-color: rgb(182, 210, 71);
-   overflow: hidden;
+    background-color: rgb(182, 210, 71);
+    overflow: hidden;
 
-   
+
 }
+
 .right-mid img {
-   position: absolute;
-   bottom: 0;
-   left: -10%;
-   width: 120%;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    width: 120%;
 }
 
 .right-bottom {
@@ -359,36 +380,42 @@ justify-content: space-around;
     justify-content: space-between;
     background-color: white;
     color: black;
-  
-    
+
+
 
 }
 
-.text-area, .review-area {
+.text-area,
+.review-area {
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 30px;
-    
+    gap: 15px;
+
 }
-.text-area h2 { 
+
+.text-area h2 {
     font-size: 2rem;
     margin-bottom: 40px;
 }
+
 .review-area h3 {
     font-size: 4rem;
     text-align: center;
     line-height: .85;
 }
+
 .stars {
-    color:  gold;
-   font-size: 2rem;
-   margin-bottom: 
+    color: gold;
+    font-size: 2rem;
+    margin-bottom:
 }
+
 button {
     background-color: rgb(119, 47, 186);
     color: white;
     padding: 8px 5px;
     border-radius: 10px;
-    
+
 }
